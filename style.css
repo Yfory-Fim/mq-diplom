@@ -113,6 +113,7 @@ body {
   background-repeat: no-repeat;
   background-size: 10px;
   background-position: right 5px center;
+  outline-color: #b59f5b;
 }
 .text-label {
   margin-top: 30px;
@@ -124,6 +125,7 @@ body {
   border: none;
   background: #f4f7f6;
   font-family: inherit;
+  outline-color: #b59f5b;
 }
 .pop-btn {
   width: 100% !important;
