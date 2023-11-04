@@ -53,7 +53,6 @@ body {
   flex-wrap: wrap;
   z-index: 7;
   position: relative;
-  margin: 20% 30px 20%;
 }
 .check {
   margin-right: 30px;
@@ -81,13 +80,13 @@ body {
 .radio:checked + .input-text:before {
   background-image: url("./svg/form-circle.svg");
 }
-.close {
+.close-label {
   top: -30px;
   right: 0;
   position: absolute;
   width: 20px;
 }
-.close:hover {
+.close-label:hover {
   cursor: pointer;
 }
 .pop-title {
@@ -121,7 +120,7 @@ body {
 }
 .text-area {
   width: calc(100% - 40px);
-  padding: 20px 20px 100px 20px;
+  padding: 20px 20px 50px;
   border: none;
   background: #f4f7f6;
   font-family: inherit;
@@ -219,11 +218,9 @@ body {
   width: 100%;
   justify-content: center;
   margin: 0 auto 57px;
-  max-width: 1660px;
 }
 .title-wrp {
   margin-bottom: 15px;
-  display: flex;
 }
 .trends-title {
   text-transform: uppercase;
@@ -270,7 +267,7 @@ body {
   z-index: 1;
 }
 .garden {
-  background-image: url("./images/trend1.jpg/");
+  background-image: url("./images/trend1.jpg");
 }
 .cheese {
   background-image: url("./images/trend2.jpg");
@@ -295,8 +292,16 @@ body {
   font-family: open-sans-bold;
   line-height: 24px;
 }
+.trend-link {
+  color: #ffffff
+}
+.trend-link:hover {
+  color: #b59f5b;
+  cursor: pointer;
+}
 .article-img {
   object-fit: cover;
+  align-self: flex-start;
 }
 .article-container {
   display: flex;
@@ -305,7 +310,6 @@ body {
 }
 .article-info {
   margin-left: 30px;
-  padding-right: 10px;
 }
 .tag-link {
   text-decoration: none;
@@ -390,7 +394,6 @@ body {
 .post-info {
   margin-left: 17px;
   line-height: 18px;
-  padding-right: 5px;
 }
 .date-time {
   font-size: 12px;
@@ -424,7 +427,6 @@ body {
 .search {
   display: flex;
   align-content: flex-start;
-  width: 290px;
   margin-bottom: 58px;
 }
 .search-fld {
@@ -578,7 +580,7 @@ body {
 }
 /* ======================OUR PRODUCTS============== */
 .products {
-  margin-bottom: 92px;
+  margin-bottom: 110px;
 }
 .trends-title {
   margin: 0 auto;
@@ -590,13 +592,14 @@ body {
   max-width: 1180px;
   margin: 0 auto;
   display: flex;
-  padding-left: 55px;
+  justify-content: space-between;
+  gap: 111px;
 }
 .product {
-  width: calc(100% / 3);
+  width: 30%;
   display: flex;
   flex-direction: column;
-  margin-right: 111px;
+  align-items: center;
 }
 .pic-cont {
   object-fit: cover;
@@ -608,10 +611,9 @@ body {
 }
 .product-caption {
   outline: 3px solid #b59f5b;
-  outline-offset: 20px;
   flex-grow: 1;
-  padding-top: 26px;
-  margin-top: -8px;
+  padding: 50px 20px 20px;
+  margin: -35px -10px -40px;
 }
 .product-title {
   font-size: 20px;
